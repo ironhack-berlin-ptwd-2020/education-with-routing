@@ -1,23 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home';
+import Education from './components/Education';
+import EducationDetail from './components/EducationDetail';
+import { Route, Link, Switch } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <nav className="nav-style">
+        <ul>
+          <Link to="/">take me home</Link><br />
+          <Link to="/education">take me to education</Link>
+        </ul>
+      </nav>
+
+      <Switch>
+        <Route exact path='/' component={Home}></Route>
+        <Route exact path='/education' component={Education}></Route>
+        {/* Route is setting props.match.params.theID for us in the component */}
+        <Route path='/education/:theID' component={EducationDetail}></Route>
+      </Switch>
     </div>
   );
 }

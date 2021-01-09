@@ -1,0 +1,29 @@
+[
+  {
+    "schoolID": "Ironhack",
+    "schoolName": "Ironhack",
+    "city": "Miami",
+    "country": "US",
+    "degree": "Full-Stack Web Developer",
+    "schoolStarted": "2017",
+    "schoolEnded": "2017"
+  },
+  {
+    "schoolID": "University-of-Cool-Things",
+    "schoolName": "University of Cool Things",
+    "city": "Paris",
+    "country": "France",
+    "degree": "MS of Cool Things",
+    "schoolStarted": "2015",
+    "schoolEnded": "2017"
+  },
+  {
+    "schoolID": "University-of-Chill-Vibe",
+    "schoolName": "University of Chill Vibe",
+    "city": "Berlin",
+    "country": "Germany",
+    "degree": "BS of Super Science",
+    "schoolStarted": "2012",
+    "schoolEnded": "2015"
+  }
+]
